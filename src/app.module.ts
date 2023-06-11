@@ -8,7 +8,7 @@ import { ProductModule } from './product/product.module';
 @Module({
   imports: [UserModule,
   MongooseModule.forRoot(
-    "mongodb+srv://root:root@lp-lol.guyjxlp.mongodb.net/admin?retryWrites=true&replicaSet=atlas-mx1ya4-shard-0&readPreference=primary&srvServiceName=mongodb&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-1",
+    "mongodb+srv://<user>:<password>@<db-name>.guyjxlp.mongodb.net/admin?retryWrites=true&replicaSet=atlas-mx1ya4-shard-0&readPreference=primary&srvServiceName=mongodb&connectTimeoutMS=10000&authSource=admin&authMechanism=SCRAM-SHA-1",
     {
       dbName: "nestjs",
     }
